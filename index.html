@@ -11,17 +11,19 @@
   </head>
   <body>
     <!-- Main Start -->
-    <main>
+    <main class="min-h-screen position-relative">
       <!-- Header -->
       <header class="header">
-        <div class="container d-flex justify-content-end align-items-center">
+        <div class="container mx-auto d-flex justify-content-end align-items-center">
           <!-- Logo -->
           <div class="logo">
-            <img src="assets/images/logo.png" alt="Logo Brunch Bistro" class="w-100">
+            <a href="">
+              <img src="assets/images/logo.png" alt="Logo Brunch Bistro" class="w-100">
+            </a>
           </div>
           <!-- /Logo -->
           <!-- Main Navigation -->
-          <nav>
+          <nav class="main-navigation">
             <ul>
               <li><a href="">Home</a></li>
               <li><a href="">About Us</a></li>
@@ -32,22 +34,32 @@
             </ul>
           </nav>
           <!-- /Main Navigation -->
+           <div class="shopping-cart">
+            <a href="">
+              <i class="fa-solid fa-cart-shopping icon-cart-shopping"></i>
+            </a>
+           </div>
         </div>
       </header>
       <!-- /Header -->
       <!-- Section -  DISCOVER A NEW LEVEL OF TASTE -->
       <section class="section-discover-a-new-level-of-taste bg-discover-a-new-level-of-taste" style="background-image: url('assets/images/img-discover-new-level-of-taste.jpg');">
       <div class="container">
-        <h1>DISCOVER<br> A NEW LEVEL OF TASTE</h1>
-        <p>Come and <br> eat well with<br> our delicious &<br> healthy foods.</p>
-        <a href="" class="btn btn-primary">
-          Show Menu
-        </a>
+        <h1><span>DISCOVER</span><br> A NEW LEVEL OF TASTE</h1>
+        <div class="inner-content">
+          <p>Come and <br> eat well with<br> our delicious &<br> healthy foods.</p>
+          <a href="" class="btn btn-primary">
+            Show Menu
+          </a>
+        </div>
       </div>
       </section>
       <!-- /Section -  DISCOVER A NEW LEVEL OF TASTE -->
       
     </main>
     <!-- Main End -->
+
+    <!-- Fontawesome - CDNJS -->
+    <script src="assets/js/all.min.js"></script>
  </body>
 </html>

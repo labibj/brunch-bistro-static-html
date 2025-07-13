@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+/* Generic CSS Start */
+
+:root {
+    --theme-branding-primary: #003a3a;
+    --theme-brnading-secondary: #f5c4c3;
+}
+
 .container {
     max-width: 1320px;
     width: 100%;
@@ -13,20 +20,86 @@
     position: relative;
 }
 
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "BioRhyme Expanded", serif;
+}
+
+h1 {
+    color: var(--theme-branding-primary);
+    margin: 0 0 3rem 0;
+}
+
+h1 span {
+    color: #ffffff;
+}
+
+
+p {
+    font-family: "BioRhyme", serif;
+    margin: 0 0 3rem 0;
+    font-size: 1.25rem;
+}
+
+.btn {
+    font-family: "Roboto", sans-serif;
+    display: inline-block;
+    padding: 1rem 1rem;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--theme-branding-primary);
+    color: var(--theme-brnading-secondary);
+}
+
+/* Generic CSS End */
+
 
 .header {
-    background-color: #3d5f00;
+    height: 7rem;
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    right: 0;
+}
+
+.header .container {
     height: 7rem;
 }
 
 .logo {
-    width: 10rem;
+    width: 6.5rem;
     position: absolute;
     left: 0;
     right: 0;
-    top: 2rem;
+    top: 0;
     margin: 0 auto;
     text-align: center;
+    transform: translate(-3rem, 0);
 }
 
 .tagline {
@@ -39,8 +112,52 @@
 
 .logo a {
     text-decoration: none;
-    width: 3rem;
     margin: 0 auto;
     display: block;
     text-align: center;
+}
+
+.shopping-cart a .icon-cart-shopping {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.main-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.main-navigation ul li a {
+    text-decoration: none;
+    color: var(--theme-branding-primary);
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+}
+
+.section-discover-a-new-level-of-taste {
+    height: 100vh;
+    padding: 13rem 0 0 0;
+}
+
+.bg-discover-a-new-level-of-taste {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-discover-a-new-level-of-taste .container {
+    padding: 0 0 0 42%;
+}
+
+.section-discover-a-new-level-of-taste h1 {
+    font-size: 2.25rem;
+}
+
+.section-discover-a-new-level-of-taste .inner-content {
+    padding: 0 0 0 15rem;
 }
