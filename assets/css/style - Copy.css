@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Genric - CSS - Start */
+
+:root {
+    --theme-primary-color: #003a3a;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "BioRhyme Expanded", serif;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-end{
+    justify-content: end;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+}
+
+.btn-primary {
+    background-color: var(--theme-primary-color);
+    color:  #f5c4c3;
+    &:hover {
+        background-color: #f5c4c3;
+        color: var(--theme-primary-color);
+    }
+}
+
+/* Genric - CSS - End */
+
+body {
+    font-family: "BioRhyme", serif;
+    font-size: 16px;
+}
+
+main {
+    position: relative;
+}
+
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    padding: 4rem 0 0 0;
+    .container {
+        height: 90px;
+    }
+    .logo {
+        width: 5rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translate(-50%, 0%);
+    }
+    nav {
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+            li a {
+                font-family: "Roboto Condensed", sans-serif;
+                color: #003a3a;
+                text-decoration: none;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 1.125rem;
+            }
+        }
+    }
+}
+
+
+.bg-discover-a-new-level-of-taste {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.section-discover-a-new-level-of-taste {
+    height: 100vh;
+    padding: 10rem 0 0 0;
+    .container {
+        padding: 0 0 0 36rem;
+        h1 {
+            margin: 0 0 5rem 0;
+        }
+        p {
+            padding: 0 0 0 8rem;
+            width: 300px;
+            margin: 0 0 3rem 0;
+        }
+        .btn {
+            margin: 0 0 0 8rem;
+        }
+    }
+}

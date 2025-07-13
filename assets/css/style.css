@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+}
+
+.position-relative {
+    position: relative;
+}
+
+
+.header {
+    background-color: #3d5f00;
+    height: 7rem;
+}
+
+.logo {
+    width: 10rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tagline {
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    display: block;
+}
+
+
+.logo a {
+    text-decoration: none;
+    width: 3rem;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
