@@ -8,7 +8,11 @@
 
 :root {
     --theme-branding-primary: #003a3a;
-    --theme-brnading-secondary: #f5c4c3;
+    --theme-branding-secondary: #f5c4c3;
+}
+
+.bg-primary {
+    background-color: var(--theme-branding-primary);
 }
 
 .container {
@@ -36,6 +40,10 @@
     width: 100%;
 }
 
+.img-fluid {
+    max-width: 100%;
+}
+
 .justify-content-end {
     justify-content: end;
 }
@@ -53,7 +61,20 @@ h1 {
     margin: 0 0 3rem 0;
 }
 
-h1 span {
+h1 span, h2 span {
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+.text-secondary {
+    color: var(--theme-branding-secondary);
+}
+
+
+.text-white {
     color: #ffffff;
 }
 
@@ -73,7 +94,13 @@ p {
 
 .btn-primary {
     background-color: var(--theme-branding-primary);
-    color: var(--theme-brnading-secondary);
+    color: var(--theme-branding-secondary);
+}
+
+.btn-outline-secondary {
+    border: 1px solid var(--theme-branding-secondary);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 900;
 }
 
 /* Generic CSS End */
@@ -83,7 +110,7 @@ p {
     height: 7rem;
     position: absolute;
     left: 0;
-    top: 5rem;
+    top: 3rem;
     right: 0;
 }
 
@@ -141,7 +168,7 @@ p {
 
 .section-discover-a-new-level-of-taste {
     height: 100vh;
-    padding: 13rem 0 0 0;
+    padding: 10rem 0 5rem 0;
 }
 
 .bg-discover-a-new-level-of-taste {
@@ -160,4 +187,30 @@ p {
 
 .section-discover-a-new-level-of-taste .inner-content {
     padding: 0 0 0 15rem;
+}
+
+.section-the-restaurant {
+    padding: 5rem 0;
+}
+
+.section-the-restaurant .col-img {
+    width: 65%;
+    padding: 0;
+}
+
+.section-the-restaurant .col-content {
+    width: 25%;
+    padding: 0 0 0 10%;
+}
+
+.section-the-restaurant .col-content .title {
+    transform: translate(-300px, 0);
+}
+
+.row {
+    display: flex;
+}
+
+.col-card {
+    width: 33%;
 }
