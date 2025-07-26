@@ -311,3 +311,13 @@ p {
     }
     
 }
+
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-wraper {
+    width: 80%;
+    margin: 0 auto;
+}
