@@ -69,6 +69,10 @@ h1 span, h2 span {
     color: #ffffff;
 }
 
+h1 span.text-secondary, h2 span.text-secondary {
+    color: var(--theme-branding-secondary);
+}
+
 h2 {
     font-size: 2.25rem;
 }
@@ -101,11 +105,18 @@ p {
     display: inline-block;
     padding: 1rem 1rem;
     text-decoration: none;
+    border: 0;
+    cursor: pointer;
 }
 
 .btn-primary {
     background-color: var(--theme-branding-primary);
     color: var(--theme-branding-secondary);
+}
+
+.btn-secondary {
+    background-color: var(--theme-branding-secondary);
+    color: var(--theme-branding-primary);
 }
 
 .btn-outline-secondary {
@@ -133,6 +144,14 @@ p {
 .py-5 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 /* Generic CSS End */
@@ -320,4 +339,22 @@ p {
 .swiper-wraper {
     width: 80%;
     margin: 0 auto;
+}
+
+.section-make-reservations {
+    .lead {
+        color: #ffffff;
+    }
+    .col-content {
+        width: 50%;
+        p {
+            color: #ffffff;
+        }
+    }
+    .col-people-date-time {
+        width: 50%;
+        label {
+            color: #ffffff;
+        }
+    }
 }

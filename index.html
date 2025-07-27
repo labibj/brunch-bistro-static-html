@@ -12,6 +12,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <!-- CSS - Styles - Date Range Picker -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!-- CSS - Styles - Time Picker -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
@@ -113,7 +117,7 @@
 
       <!-- Section - DELICIOUS & NUTRITIOUS -->
       <section class="section-delicious-nutritious bg-primary bg-img-delicious-nutritious py-5" style="background-image: url(assets/images/bg-img-delicious-nutritious.png);">
-        <div class="container">
+        <div class="container mx-auto">
           <div class="text-center">
             <h2 class="text-white">DELICIOUS & NUTRITIOUS</h2>
             <p class="lead text-white">
@@ -336,6 +340,89 @@
         </div>
        </section>
       <!-- /Section - Chef -->
+
+      <!-- Section - Marketing - Video -->
+      <section class="section-video py-5">
+        <div class="container mx-auto">
+          <div class="text-center">
+            <h2>Experience the Flavor – Watch Our Story Unfold</h2>
+            <p class="lead">
+              Get a taste of what makes us different! Watch our journey, passion, and the love we put into every bite.
+            </p>
+          </div>
+          <!-- Video - Marketing -->
+          <div class="video-container">
+            <video width="100%" height="" controls>
+              <source src="assets/video/bristo-product-video.mp4">
+            </video>
+          </div>
+          <!-- /Video - Marketing -->
+        </div>
+      </section>
+      <!-- /Section - Marketing - Video -->
+      <!-- Section - Audio - Podcast -->
+      <section class="section-audio-podcast py-5">
+        <div class="container mx-auto">
+          <div class="text-center">
+            <h2>Bite-Sized Talks – The FoodCast</h2>
+            <p class="lead">
+              Tune in to The FoodCast, where we serve up flavorful conversations with chefs, food lovers, and industry insiders. From kitchen secrets to food trends, each episode is cooked to inspire and delight your taste buds.
+            </p>
+          </div>
+          <div class="audio-podcast">
+            <audio controls>
+              <source src="assets/audio/ding-101492.mp3"  type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+      </section>
+      <!-- /Section - Audio - Podcast -->
+
+      <!-- Section - Make Resvervations -->
+       <section class="section-make-reservations bg-primary py-5">
+        <div class="container mx-auto">
+          <div class="text-center">
+            <h2>
+              <span>MAKE A</span> <span class="text-secondary">RESERVATION</span>
+            </h2>
+            <p class="lead">Come and eat well with our delicious & healthy foods.</p>
+          </div>
+          <div class="d-flex">
+            <div class="col-content">
+              <p>Him given and midst tree form seas she'd saw give evening one every make hath moveth you're appear female heaven had signs own days saw they're have let midst given him given and midst tree. Form seas she'd saw give evening.</p>
+            </div>
+            <div class="col-people-date-time d-grid grid-cols-2">
+              <div>
+                <label for="">People</label>
+                <select name="" id="" class="select-control">
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                </select>
+              </div>
+              <div>
+                <label for="">Date</label>
+                <!-- Date - Picker - JS - Plugin -->
+                 <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+                 <!-- Date - Picker - JS - Plugin -->
+              </div>
+              <div>
+                <label for="">Time</label>
+                <!-- Time - Picker - JS - Plugin -->
+                <div class="input-group date" id="timePicker">
+                  <input type="text" class="form-control timePicker">
+                  <span class="input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                </div>
+                 <!-- Time - Picker - JS - Plugin -->
+              </div>
+              <div>
+                <button class="btn btn-secondary">Book a table</button>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+      <!-- /Section - Make Resvervations -->
       
     </main>
     <!-- Main End -->
@@ -344,6 +431,12 @@
     <script src="assets/js/all.min.js"></script>
     <!-- SwiperJS - CDNJS -->
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <!-- Date Range Picker -->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+      <!-- Time Picker -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
     <!-- SwiperJS - CDNJS -->
      <script src="assets/js/app.js"></script> 
  </body>
