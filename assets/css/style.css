@@ -52,6 +52,13 @@
     justify-content: end;
 }
 
+@media (max-width: 767px) {
+    .justify-content-end {
+        justify-content: space-between;
+    }
+}
+
+
 .align-items-center {
     align-items: center;
 }
@@ -157,6 +164,8 @@ p {
 /* Generic CSS End */
 
 
+/* Hearder */
+
 .header {
     height: 7rem;
     position: absolute;
@@ -180,6 +189,15 @@ p {
     transform: translate(-3rem, 0);
 }
 
+@media (max-width: 767px) {
+    .logo {
+        position: static;
+        margin: 0;
+        width: 3rem;
+        transform: none;
+    }
+}
+
 .tagline {
     color: #fff;
     white-space: nowrap;
@@ -199,7 +217,6 @@ p {
     color: rgba(255, 255, 255, 1);
 }
 
-
 .main-navigation ul {
     list-style: none;
     padding: 0;
@@ -216,6 +233,28 @@ p {
     font-size: 1.125rem;
     text-transform: uppercase;
 }
+
+@media (max-width: 767px) { /* Media Query Written To Target Phone */
+    .main-navigation {
+        display: none;
+    }
+    .main-navigation {
+        &.show {
+            display: block;
+            ul {
+                flex-direction: column;
+            }
+        }
+
+    }
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Header CSS End */
 
 .section-discover-a-new-level-of-taste {
     height: 100vh;

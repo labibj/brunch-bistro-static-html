@@ -75,3 +75,16 @@ $('#timePicker').datetimepicker({
   
   $(this).data('DateTimePicker').date(time);
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuButton = document.querySelector('.js-mobile-menu');
+  const mainNavigation = document.querySelector('.main-navigation');
+
+  if (mobileMenuButton && mainNavigation) {
+    mobileMenuButton.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default link behavior (e.g., navigating to a new page)
+      mainNavigation.classList.toggle('show'); // Toggles the 'show' class
+    });
+  }
+});
