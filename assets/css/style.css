@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.body {
+    font-size: 16px;
+}
+
+
 /* Generic CSS Start */
 
 :root {
@@ -174,8 +179,25 @@ p {
     right: 0;
 }
 
+
+
 .header .container {
     height: 7rem;
+}
+
+@media (width = 26.5625rem) { /* 40rem (425px) */
+    .header {
+        position: fixed;
+        top: 2rem;
+        left: 1rem; /* 1rem = 16px - Base Unit */
+        right: 1rem; /* 1rem = 16px - Base Unit */
+        height: 2rem;
+        z-index: 99;
+    }
+
+    .header .container {
+        height: 2rem;
+    }
 }
 
 .logo {
@@ -234,6 +256,10 @@ p {
     text-transform: uppercase;
 }
 
+@media (width >= 40rem) { /* 40rem (640px) */
+
+}
+
 @media (max-width: 767px) { /* Media Query Written To Target Phone */
     .main-navigation {
         display: none;
@@ -279,6 +305,25 @@ p {
     padding: 0 0 0 15rem;
 }
 
+
+@media (width = 26.5625rem) { /* This is media query written to target device having with 425px */
+    .section-discover-a-new-level-of-taste {
+        height: auto;
+        padding: 5rem 0 2.5rem 0;
+    }
+    
+    .section-discover-a-new-level-of-taste .container {
+        padding: 0 1rem;
+    }
+
+    .section-discover-a-new-level-of-taste .inner-content {
+        padding: 0 0 0 0;
+    }
+    .section-discover-a-new-level-of-taste h1 {
+        font-size: 1.5rem;
+    }
+}
+
 .section-the-restaurant {
     padding: 5rem 0;
 }
@@ -292,6 +337,9 @@ p {
     width: 25%;
     padding: 0 0 0 10%;
 }
+
+
+
 
 .section-the-restaurant .col-content .title {
     transform: translate(-300px, 0);
